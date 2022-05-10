@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Emploihub</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Playfair+Display:ital,wght@1,500&display=swap');
+        </style>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./styles/index.css">
+
+        <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    </head>
+    <body class="container-fluid" id="main_container">
+        <header class="container-fluid" id="navbar">
+            <div class="row-fluid d-inline-flex justify-content-between align-items-center" id="navRow">
+                <img class="p-3" id="logo" alt="logo..." src="./EmpHub_logo-removebg-preview.png">
+                <div class="d-inline-flex p-3 justify-content-around align-items-center" id="pages">
+                    <li><a href="https://www.w3schools.com" target="_blank">JOBS</a></li>
+                    <li><a href="https://www.w3schools.com" target="_blank">COMPANIES</a></li>
+                    <li><a href="https://www.w3schools.com" target="_blank">SERVICES</a></li>
+                    <li><a href="https://www.w3schools.com" target="_blank">RESOURCES</a></li>
+                </div>
+                <div class="d-inline-flex m-4 justify-content-around align-items-center" id="buttons">
+                    <div class="d-flex mt-5 m-2 flex-column align-items-center">
+                        <a href="https://www.w3schools.com" target="_blank" onmouseover="openCand()" onmouseout="closeCand()">
+                            <i class="fas fa-solid fa-briefcase fa-2x"></i>
+                        </a>
+                        <div class="btn mt-2 btn-static btn-warning btn-sm" id="candBtn" style="visibility:hidden;">Candidate</div>
+                    </div>
+                    <div class="d-flex mt-5 m-2 flex-column align-items-center">
+                        <a href="https://www.w3schools.com" target="_blank" onmouseover="openEmp()" onmouseout="closeEmp()">
+                            <i class="fas fa-solid fa-user fa-2x"></i>
+                        </a>
+                        <div class="btn mt-2 btn-static btn-warning btn-sm" id="empBtn" style="visibility:hidden;">Employer</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid d-flex flex-row align-items-around m-0 p-0" id="firstLayer">
+            <svg id="visual" style="position:absolute;z-index:-1;" viewBox="0 0 900 500" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="900" height="600" fill="#222831"></rect><path d="M0 314L25 305C50 296 100 278 150 283.8C200 289.7 250 319.3 300 322.8C350 326.3 400 303.7 450 296.3C500 289 550 297 600 309.7C650 322.3 700 339.7 750 341.7C800 343.7 850 330.3 875 323.7L900 317L900 601L875 601C850 601 800 601 750 601C700 601 650 601 600 601C550 601 500 601 450 601C400 601 350 601 300 601C250 601 200 601 150 601C100 601 50 601 25 601L0 601Z" fill="#fa7268"></path><path d="M0 406L25 393.8C50 381.7 100 357.3 150 349.5C200 341.7 250 350.3 300 350.8C350 351.3 400 343.7 450 352.7C500 361.7 550 387.3 600 399.2C650 411 700 409 750 393.5C800 378 850 349 875 334.5L900 320L900 601L875 601C850 601 800 601 750 601C700 601 650 601 600 601C550 601 500 601 450 601C400 601 350 601 300 601C250 601 200 601 150 601C100 601 50 601 25 601L0 601Z" fill="#e34c67"></path><path d="M0 411L25 425.7C50 440.3 100 469.7 150 486.5C200 503.3 250 507.7 300 493.2C350 478.7 400 445.3 450 433.5C500 421.7 550 431.3 600 432.3C650 433.3 700 425.7 750 433.8C800 442 850 466 875 478L900 490L900 601L875 601C850 601 800 601 750 601C700 601 650 601 600 601C550 601 500 601 450 601C400 601 350 601 300 601C250 601 200 601 150 601C100 601 50 601 25 601L0 601Z" fill="#c62368"></path>
+            </svg>
+            <div id="firstText" class="container-fluid m-5 pl-3 p-2">
+                <br><br>
+                <h1 class="p-3">Trust Us! <br>We will build your success</h1>
+                <p class="p-3">Get your dream job in no time</p>
+            </div>
+            <svg class="p-5" id="jobSeek" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="811.23312" height="695.86338" viewBox="0 0 811.23312 695.86338" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M993.03839,649.66837,619.78,775.81966a18.5208,18.5208,0,0,1-23.44944-11.60275L423.43282,252.64445A18.52081,18.52081,0,0,1,435.03557,229.195L808.294,103.04372a18.52081,18.52081,0,0,1,23.44944,11.60275l172.8977,511.57246A18.5208,18.5208,0,0,1,993.03839,649.66837Z" transform="translate(-194.38344 -102.06831)" fill="#e6e6e6"/><path d="M983.51208,640.22118,621.62193,762.5303a12.51409,12.51409,0,0,1-15.84421-7.8397L436.72219,254.48642a12.51409,12.51409,0,0,1,7.83969-15.84422L806.452,116.33309a12.51408,12.51408,0,0,1,15.84422,7.83969L991.35178,624.377A12.51409,12.51409,0,0,1,983.51208,640.22118Z" transform="translate(-194.38344 -102.06831)" fill="#fff"/><path d="M892.537,796.43169h-394a18.5208,18.5208,0,0,1-18.5-18.5v-540a18.5208,18.5208,0,0,1,18.5-18.5h394a18.5208,18.5208,0,0,1,18.5,18.5v540A18.5208,18.5208,0,0,1,892.537,796.43169Z" transform="translate(-194.38344 -102.06831)" fill="#ccc"/><path d="M886.537,784.43169h-382a12.51408,12.51408,0,0,1-12.5-12.5v-528a12.51408,12.51408,0,0,1,12.5-12.5h382a12.51408,12.51408,0,0,1,12.5,12.5v528A12.51408,12.51408,0,0,1,886.537,784.43169Z" transform="translate(-194.38344 -102.06831)" fill="#fff"/><path d="M805.15871,381.20852H552.857a8.01411,8.01411,0,0,1,0-16.02823H805.15871a8.01411,8.01411,0,1,1,0,16.02823Z" transform="translate(-194.38344 -102.06831)" fill="#ccc"/><path d="M838.21693,408.25615H552.857a8.01411,8.01411,0,1,1,0-16.02822h285.3599a8.01411,8.01411,0,0,1,0,16.02822Z" transform="translate(-194.38344 -102.06831)" fill="#ccc"/><path d="M805.15871,502.422H552.857a8.01412,8.01412,0,0,1,0-16.02823H805.15871a8.01411,8.01411,0,1,1,0,16.02823Z" transform="translate(-194.38344 -102.06831)" fill="#ff6376"/><path d="M838.21693,529.46962H552.857a8.01412,8.01412,0,0,1,0-16.02823h285.3599a8.01411,8.01411,0,0,1,0,16.02823Z" transform="translate(-194.38344 -102.06831)" fill="#ccc"/><path d="M805.15871,623.63546H552.857a8.01412,8.01412,0,0,1,0-16.02823H805.15871a8.01411,8.01411,0,1,1,0,16.02823Z" transform="translate(-194.38344 -102.06831)" fill="#ccc"/><path d="M838.21693,650.68309H552.857a8.01411,8.01411,0,0,1,0-16.02823h285.3599a8.01411,8.01411,0,0,1,0,16.02823Z" transform="translate(-194.38344 -102.06831)" fill="#ccc"/><path d="M398.87573,472.69562h-58a4.50508,4.50508,0,0,1-4.5-4.5v-25a33.5,33.5,0,1,1,67,0v25A4.50508,4.50508,0,0,1,398.87573,472.69562Z" transform="translate(-194.38344 -102.06831)" fill="#2f2e41"/><path d="M488.39382,603.16751a10.05576,10.05576,0,0,1-9.2697-12.32186l-30.22529-19.06334,16.91685-7.65858,26.10891,19.277a10.11027,10.11027,0,0,1-3.53077,19.76676Z" transform="translate(-194.38344 -102.06831)" fill="#ffb8b8"/><path d="M467.53666,587.61419a5.39381,5.39381,0,0,1-2.82028-1.11863L381.56705,522.044l-10.72093-19.067a10.578,10.578,0,0,1,.92871-11.78959h0a10.61536,10.61536,0,0,1,15.52842-1.20769l92.68006,75.16965a5.433,5.433,0,0,1,1.38963,7.64292l-8.88544,12.547a5.39113,5.39113,0,0,1-3.63781,2.23666A5.532,5.532,0,0,1,467.53666,587.61419Z" transform="translate(-194.38344 -102.06831)" fill="#2f2e41"/><polygon points="77.194 670.074 88.559 674.673 111.704 633.026 94.931 626.239 77.194 670.074" fill="#ffb8b8"/><path d="M270.18005,767.25892l22.381,9.05613.00091.00037A15.38605,15.38605,0,0,1,301.053,796.35l-.18757.46348-36.64425-14.82769Z" transform="translate(-194.38344 -102.06831)" fill="#2f2e41"/><polygon points="209.619 682.861 221.879 682.86 227.712 635.572 209.617 635.573 209.619 682.861" fill="#ffb8b8"/><path d="M400.87573,780.92671l24.1438-.001h.001A15.38605,15.38605,0,0,1,440.407,796.312v.5l-39.53051.00146Z" transform="translate(-194.38344 -102.06831)" fill="#2f2e41"/><path d="M414.10344,758.19562c-4.86926,0-9.64429-1.98519-12.27942-3.305a4.96781,4.96781,0,0,1-2.67049-3.49082L373.3121,621.11417,306.27188,746.54481a4.98885,4.98885,0,0,1-2.82981,2.38589c-14.43877,4.82471-22.31335-2.76608-25.02948-6.25257a4.91175,4.91175,0,0,1-.55813-5.09258l31.04876-67.45092,18.77366-64.07244,18.97617-46.89055.41422.04429,63.45409,6.6792,7.71608,42.43522,7.77063,141.29376a4.90955,4.90955,0,0,1-.90835,3.15923A12.93315,12.93315,0,0,1,414.10344,758.19562Z" transform="translate(-194.38344 -102.06831)" fill="#2f2e41"/><circle cx="183.76001" cy="345.68636" r="24.56103" fill="#ffb8b8"/><path d="M386.68511,585.4008c-10.69282,0-23.92317-6.25841-39.46088-18.689l-.2647-.21247,10.98555-86.6639.51288-.01889c15.71329-.56776,28.50041,3.42194,39.08728,12.22643l.09089.09443,8.58436,11.03661.00383.20184,1.21049,67.78836-.03069.09561a21.576,21.576,0,0,1-13.78631,13.15776A23.93576,23.93576,0,0,1,386.68511,585.4008Z" transform="translate(-194.38344 -102.06831)" fill="#ff6376"/><path d="M402.5005,625.91635a5.4613,5.4613,0,0,1-5.26393-4.04872L382.156,564.7771l-9.55345,52.01251a5.42933,5.42933,0,0,1-6.10112,4.4052l-41.6-5.80514a5.43857,5.43857,0,0,1-4.399-7.13425l21.04273-62.021-4.71062-36.33817a27.21029,27.21029,0,0,1,25.851-30.68412l.42169-.01652,20.009,48.25652,3.18232-12.72928,4.98034-27.39911.74364.43084a44.271,44.271,0,0,1,22.11394,40.3562l-1.26184,29.01978L424.054,616.38119a5.44793,5.44793,0,0,1-4.32729,6.35166L403.513,625.82074A5.38036,5.38036,0,0,1,402.5005,625.91635Z" transform="translate(-194.38344 -102.06831)" fill="#2f2e41"/><path d="M411.301,445.69562H375.83545l-.36377-5.0918-1.81836,5.0918h-5.46094l-.7207-10.0918-3.604,10.0918H353.301v-.5a26.52975,26.52975,0,0,1,26.49975-26.5H384.801a26.53,26.53,0,0,1,26.5,26.5Z" transform="translate(-194.38344 -102.06831)" fill="#2f2e41"/><path d="M991.38344,797.93169h-796a1,1,0,1,1,0-2h796a1,1,0,0,1,0,2Z" transform="translate(-194.38344 -102.06831)" fill="#ccc"/><path d="M387.537,598.14753a11.19058,11.19058,0,0,0,12.76969,11.09013A18.841,18.841,0,0,0,417.579,620.55173h0a18.83986,18.83986,0,0,0,18.83989-18.83986V585.38779c0-4.20163-3.40618-5.60771-7.60771-5.60771H406.34679c-4.20153,0-7.60771,1.40608-7.60771,5.60771v1.55764A11.21477,11.21477,0,0,0,387.537,598.14753Zm3.05512,0a8.15631,8.15631,0,0,1,8.147-8.147v11.71132a18.87291,18.87291,0,0,0,.55767,4.55439c-.18523.01262-.36946.02825-.55767.02825A8.15631,8.15631,0,0,1,390.5921,598.14753Z" transform="translate(-194.38344 -102.06831)" fill="#ff6376"/><path d="M396.55813,595.4541a10.0558,10.0558,0,0,0-15.06856-3.2702l-29.95259-19.489.1142,18.56935,28.426,15.66021a10.11027,10.11027,0,0,0,16.481-11.47035Z" transform="translate(-194.38344 -102.06831)" fill="#ffb8b8"/><path d="M364.12573,606.78814a4.50226,4.50226,0,0,1-3.18213-1.31836l-38.14014-38.14014a10.08633,10.08633,0,0,1-2.71692-9.43213c3.26465-14.273,11.22034-48.37646,14.5791-56.773a29.676,29.676,0,0,1,12.859-14.979l.15-.0752,12.07458,2.231,1.06409,37.24365-14.58582,31.25537,31.014,29.27686a4.484,4.484,0,0,1,.4679,6.02881l-10.02686,12.93847a4.50324,4.50324,0,0,1-3.2738,1.73487C364.31433,606.78521,364.21972,606.78814,364.12573,606.78814Z" transform="translate(-194.38344 -102.06831)" fill="#2f2e41"/><ellipse cx="223.15354" cy="480.86338" rx="14" ry="2" fill="#2f2e41"/></svg>
+            <!-- <div id="firstBox" class="container-fluid d-flex">
+                <span class="material-symbols-outlined">search</span>
+            </div> -->
+        </div>
+
+        <div id="dummyDiv">
+        </div>
+
+        <div id="foot" class="container-fluid d-flex flex-row justify-content-around align-items-around m-0 p-0" style="background-color: transparent;">
+            <div id="connect" class="mr-5 container-fluid d-flex flex-column  justify-content-center align-items-center" style="background-color: transparent;">
+                <img class="container-fluid p-3" id="logoFoot" alt="logo..." src="./EmpHub_logo-Text.png" style="background-color: transparent;">
+                <div class="container-fluid d-flex flex-row justify-content-center" id="icons" style="background-color: transparent;">
+                    <a class="p-2 m-2" href="https://twitter.com/home" style="background-color: transparent;"><i style="background-color: transparent;" class="fa fa-twitter"></i></a>
+                    <a class="p-2 m-2" href="https://www.facebook.com/" style="background-color: transparent;"><i style="background-color: transparent;" class="fa fa-facebook"></i></a>
+                    <a class="p-2 m-2" href="https://www.linkedin.com/feed/" style="background-color: transparent;"><i style="background-color: transparent;" class="fa fa-linkedin-square"></i></a>
+                </div>
+            </div>
+            <div id="tags" class="container-fluid ml-5 d-flex flex-row" style="background-color: transparent;">
+                <div class="container-fluid d-flex flex-row justify-content-center align-items-center" id="tagWord" style="background-color: transparent;">
+                    <a class="p-2 m-2" href="https://twitter.com/home" style="background-color: transparent;">About Us</a>
+                    <a class="p-2 m-2" href="https://www.instagram.com/" style="background-color: transparent;">Help Center</a>
+                    <a class="p-2 m-2" href="https://www.linkedin.com/feed/" style="background-color: transparent;">Careers</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script/index.js" type="text/javascript" rel="script"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/4917270fc0.js" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,199 @@
+*{
+    background-color: #222831;
+}
+
+#main_container{
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar{  
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 15%;
+    /* background-color: #393E46; */
+    background-color: transparent;
+    transition: all 0.1s ease;
+}
+
+/* #navbar:hover{
+    border-bottom: 1px solid darkgreen;
+}*/
+
+#logo{
+    background-color: transparent;
+    height: 10%;
+    width: 10%;
+}
+
+#navRow{
+    background-color: transparent;
+    width: 100%;
+}
+
+#pages{
+    background-color: transparent;
+    list-style: none;
+}
+
+#pages li{
+    background-color: transparent;
+}
+
+#pages li a{
+    background-color: transparent;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: x-large;
+
+    padding: 20px;
+    color: #F0A500;
+    transition: all 0.5s ease;
+}
+
+#buttons{
+    height: 30px;
+    box-sizing: border-box; 
+    background-color: transparent;
+}
+
+#buttons > div{
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#buttons > div > a{
+    background-color: transparent;
+}
+
+#buttons > div > a > i:hover{
+    color: #FFD369;
+}
+
+#buttons > div > a > i{
+    color: #F0A500;
+    background-color: transparent;
+}
+
+#pages li a:hover{
+    font-size: xx-large;
+    text-shadow: 0px 2.5px 0px #FFD369;
+}
+
+#candBtn, #empBtn{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: large;
+    color: whitesmoke;
+
+    /* position: absolute;
+    top: 15%; */
+    transition: visibility 1s ease,opacity 10s ease;
+}
+
+#firstLayer{
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+    /* border-top: 2px dashed white; */
+}
+
+#firstLayer > svg{
+    height: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#firstText{
+    height: fit-content;
+    background-color: transparent;
+}
+
+#firstText > h1{
+    word-wrap: break-word;
+    font-weight: bold;
+    font-family: 'Koulen', cursive;
+    font-size: xxx-large;
+    background-color: transparent;
+    color: #EEEEEE;
+}
+
+#firstText > p{
+    background-color: transparent;
+    font-family: 'Playfair Display', serif;
+    font-size: x-large;
+    color: #EEEEEE;
+}
+
+#jobSeek{
+    flex-shrink: 1.5;
+    background-color: transparent;
+    /* background-repeat: no-repeat; */
+    transform: scale(0.8);
+}
+
+#logoFoot{
+    height: 70px;
+    width: auto;
+}
+
+#icons a i{
+    color: white;
+    text-decoration: none;
+}
+
+#dummyDiv{
+    height: 300px;
+    background-color: transparent;
+}
+
+#foot{
+    background-color: transparent;
+}
+
+#tagWord a{
+    text-decoration: none;
+    font-family: monospace;
+    font-size: large;
+    font-weight: bold;
+    color: #EEEEEE;
+    transition: all 0.2s ease;
+}
+
+#tagWord a:hover{
+    opacity: 0.5;
+}
+
+
+
+/* 
+#secondLayer>svg{
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#secondBox{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+} 
+
+#secondBox > span{
+    background-color: transparent;
+    color: #222831;
+}
+
+#secondLayer{
+    background-color: #393E46;
+    width: 100%;
+}*/
