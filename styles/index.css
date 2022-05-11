@@ -3,12 +3,19 @@
     padding: 0px;
 }
 
+/*
+font-family: 'Koulen', cursive;
+font-family: 'Playfair Display', serif;
+*/
+
 :root{
     --purple-heart : #732eca;
     --custom-white : #f5f7ec;
 }
 
 #main_container{
+    height: 120vh;
+    width: auto;
     background-color: var(--custom-white);
 }
 
@@ -44,3 +51,34 @@
     transition: all 0.5s ease;
 }
 
+#navbar{
+    border-bottom: 2px dashed #2b2b29;
+    background-color: var(--custom-white);
+    width: 100%;
+}
+
+#circle1, #circle2, #circle3{
+    font-family: monospace;  
+    color: #f5f7ec; 
+}
+
+#circle1{
+    height: 300px; 
+    width: 300px;
+}
+
+#circle2{
+    height: 150px; 
+    width: 150px;
+}
+
+#circle3{
+    height: 50px; 
+    width: 50px;
+}
+
+#foot{
+    height: 20%;
+    width: auto;
+    background-color: #732eca;
+}
