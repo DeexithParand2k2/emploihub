@@ -14,7 +14,7 @@ font-family: 'Playfair Display', serif;
 }
 
 #main_container{
-    height: 120vh;
+    height: auto;
     width: auto;
     background-color: var(--custom-white);
 }
@@ -54,7 +54,7 @@ font-family: 'Playfair Display', serif;
 #navbar{
     border-bottom: 2px dashed #2b2b29;
     background-color: var(--custom-white);
-    width: 100%;
+    width: auto;
 }
 
 #circle1, #circle2, #circle3{
@@ -78,7 +78,48 @@ font-family: 'Playfair Display', serif;
 }
 
 #foot{
-    height: 20%;
+    height: auto;
     width: auto;
-    background-color: #732eca;
+    background-color: var(--purple-heart);
+}
+
+#footContent{
+    height: 10%;
+}
+
+#clients{
+    width: auto;
+    border-top: 2px solid #4f1f89;
+}
+
+#clients img{
+    opacity: 0.7;
+}
+
+#clients p{
+    font-family: 'Koulen', cursive;
+    color: var(--custom-white);
+}
+
+#footLogo{
+    color: var(--custom-white);
+    font-size: xx-large;
+    font-family: monospace;
+}
+
+#icons > a > i{
+    color: #f5f7ec;
+}
+
+#icons > a > i:hover{
+    color: black;
+}
+
+#tags > a{
+    text-decoration: none;
+    color: var(--custom-white);
+}
+
+#tags > a:hover{
+    color: black;
 }
