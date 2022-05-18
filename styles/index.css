@@ -10,8 +10,10 @@
 
     --custom-white-2 : #FFFFFF;
     --custom-blue : #212362;
+    --custom-blue-4 : #21236272;
     --custom-blue-2 : #F9FBFF;
     --custom-blue-3 : #5257A6;
+    --custom-orange : #F2A33B;
 }
 
 #main_container{    
@@ -22,13 +24,8 @@
 
 @media screen and (max-width: 1495px) {
     #main_container{
-      background-color: rosybrown;
       width: fit-content;
     }
-}
-
-#logo{
-    width: 10%;
 }
 
 #pages{
@@ -37,17 +34,16 @@
 
 #pages li a{
     text-decoration: none;
-    font-weight: bold;
     font-size: x-large;
     font-family: monospace;
 
     padding: 20px;
     color: var(--custom-blue);
-    transition: all 0.5s ease;
+    transition: all 0.25s ease;
 }
 
 #pages li a:hover{
-    color: var(--custom-blue-3);
+    color: var(--custom-orange);
 }
 
 #candBtn, #empBtn{
@@ -65,20 +61,28 @@
 
 #circle1, #circle2, #circle3{
     font-family: monospace;  
+    background-color: var(--custom-blue-3);
     color: var(--custom-white-2); 
 }
 
+/* #circlePlay div{
+    background-color: var(--custom-blue);
+} */
+
 #circle1{
+    background-color: var(--custom-blue-4);
     height: 300px; 
     width: 300px;
 }
 
 #circle2{
+    background-color: var(--custom-blue-4);
     height: 150px; 
     width: 150px;
 }
 
 #circle3{
+    background-color: var(--custom-blue-4);
     height: 50px; 
     width: 50px;
 }
@@ -117,14 +121,63 @@
 }
 
 #icons > a > i:hover{
-    color: black;
+    color: var(--custom-blue);
 }
 
 #tags > a{
+    padding-bottom: 0;
     text-decoration: none;
     color: var(--custom-blue-3);
 }
 
 #tags > a:hover{
-    color: black;
+    padding-bottom: 0;
+    color: var(--custom-blue);
 }
+
+/* Instead of using border of underline tag
+#pages a::after{
+    content:'';
+    display: block;
+    width:0;
+    height: 1px;
+    background: var(--custom-blue);
+    transition: width .5s;
+}
+
+#pages a:hover::after{
+    width: 100%; 
+    transition: width .5s;
+} */
+
+#tags a::after {
+    content: '';
+    display: block;    
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--custom-blue);
+    transform-origin: bottom left;
+    transition: transform 0.5s;
+}
+  
+#tags a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* #pages a::after {
+    content: '';
+    display: flex;
+    width:0;
+    height: 1px;
+    background: var(--custom-blue);
+    transition: width .5s;
+}
+  
+#pages a:hover::after{
+    width: 120%;
+    transition: width .5s;
+} */
