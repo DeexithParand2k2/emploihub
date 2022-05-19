@@ -5,22 +5,123 @@
 }
 
 :root{
-    --purple-heart : #732eca;
-    --custom-white : #f5f7ec;
-
     --custom-white-2 : #FFFFFF;
     --custom-blue : #212362;
-    --custom-blue-4 : #21236272;
     --custom-blue-2 : #F9FBFF;
+    --custom-blue-2-0 : #ebf2ff;
     --custom-blue-3 : #5257A6;
+    --custom-blue-4 : #21236272;
     --custom-orange : #F2A33B;
 }
 
-#main_container{    
-    height: auto;
-    width: auto;
+#main_container{  
     background-color: var(--custom-white-2);
 }
+
+html, body {
+    min-height:100%;
+}
+
+#contentMain{
+    min-height: 100%;
+}
+
+/*Medium Screen*/
+@media screen and (max-width: 900px){ 
+    #textBox1{
+        white-space: normal;
+    }
+
+    #contentBox1 > div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #textBox1,#circlePlay{
+        width: 100%;
+        min-height: 50em;
+    }
+
+    #textBox1 h1{
+        font-size:5em;
+    }
+
+    #textBox1 p{
+        font-size: 2em;
+    }
+
+    #circlePlay > div > #circle1{
+        height: calc(300px + 300px);
+        width: calc(300px + 300px);
+        font-size:2em;
+    }
+
+    #circlePlay > div > #circle2{
+        height: calc(150px + 200px);
+        width: calc(150px + 200px);
+        font-size:2em;
+    }
+
+    #circlePlay > #circle3{
+        height: calc(50px + 100px);
+        width: calc(50px + 100px);
+        font-size:2em;
+    }
+
+}
+
+/*Small Screen*/
+@media screen and (max-width: 500px){
+    #textBox1{
+        white-space: normal;
+    } 
+
+    #contentBox1 > div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #textBox1,#circlePlay{
+        width: 100%;
+        height: 50em;
+    }
+
+    #textBox1 h1{
+        font-size:6em;
+    }
+
+    #textBox1 p{
+        font-size: 3em;
+    }
+
+    #circlePlay > div > #circle1{
+        height: calc(300px + 200px);
+        width: calc(300px + 200px);
+        font-size:3em;
+    }
+
+    #circlePlay > div > #circle2{
+        height: calc(150px + 200px);
+        width: calc(150px + 200px);
+        font-size:3em;
+    }
+
+    #circlePlay > #circle3{
+        height: calc(50px + 100px);
+        width: calc(50px + 100px);
+        font-size:3em;
+    }
+}
+
+/*Important Media Queries*/
+@media screen and (min-width: 900px){
+    #contentBox1 > div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+} 
 
 @media screen and (max-width: 1495px) {
     #main_container{
@@ -34,8 +135,6 @@
 
 #pages li a{
     text-decoration: none;
-    font-size: x-large;
-    font-family: monospace;
 
     padding: 20px;
     color: var(--custom-blue);
@@ -47,27 +146,22 @@
 }
 
 #candBtn, #empBtn{
-    font-family: monospace;
     font-weight: bold;
-    font-size: large;
     transition: all 0.5s ease;
 }
 
 #navbar{
+    position: sticky;
     border-bottom: 2px dashed #2b2b29;
     background-color: var(--custom-white-2);
     width: auto;
 }
 
+
 #circle1, #circle2, #circle3{
-    font-family: monospace;  
     background-color: var(--custom-blue-3);
     color: var(--custom-white-2); 
 }
-
-/* #circlePlay div{
-    background-color: var(--custom-blue);
-} */
 
 #circle1{
     background-color: var(--custom-blue-4);
@@ -88,13 +182,7 @@
 }
 
 #foot{
-    height: auto;
-    width: auto;
-    background-color: var(--custom-blue-2);
-}
-
-#footContent{
-    height: 10%;
+    background-color: var(--custom-blue-2-0);
 }
 
 #clients{
@@ -112,8 +200,6 @@
 
 #footLogo{
     color: var(--custom-blue-3);
-    font-size: xx-large;
-    font-family: monospace;
 }
 
 #icons > a > i{
@@ -135,20 +221,9 @@
     color: var(--custom-blue);
 }
 
-/* Instead of using border of underline tag
-#pages a::after{
-    content:'';
-    display: block;
-    width:0;
-    height: 1px;
-    background: var(--custom-blue);
-    transition: width .5s;
+#textBox1 > div > p{
+    color: var(--custom-blue-3);
 }
-
-#pages a:hover::after{
-    width: 100%; 
-    transition: width .5s;
-} */
 
 #tags a::after {
     content: '';
@@ -167,17 +242,3 @@
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
-/* #pages a::after {
-    content: '';
-    display: flex;
-    width:0;
-    height: 1px;
-    background: var(--custom-blue);
-    transition: width .5s;
-}
-  
-#pages a:hover::after{
-    width: 120%;
-    transition: width .5s;
-} */
