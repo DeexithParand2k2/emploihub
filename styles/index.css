@@ -68,6 +68,10 @@ html, body {
         font-size:2em;
     }
 
+    #logo{
+        width: 25%;
+    }
+
 }
 
 /*Small Screen*/
@@ -97,20 +101,25 @@ html, body {
     #circlePlay > div > #circle1{
         height: calc(300px + 200px);
         width: calc(300px + 200px);
-        font-size:3em;
+        font-size:2em;
     }
 
     #circlePlay > div > #circle2{
         height: calc(150px + 200px);
         width: calc(150px + 200px);
-        font-size:3em;
+        font-size:2em;
     }
 
     #circlePlay > #circle3{
         height: calc(50px + 100px);
         width: calc(50px + 100px);
-        font-size:3em;
+        font-size:2em;
     }
+
+    #logo{
+        width: 25%;
+    }
+
 }
 
 /*Important Media Queries*/

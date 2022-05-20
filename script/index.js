@@ -1,8 +1,18 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if(document.documentElement.scrollTop <= 40) {
-    document.getElementById("logo").style.width = "10%";
+  if(document.documentElement.scrollTop <= 40 && screen.width>900) {
+    document.getElementById("logo").style.width = "12%";
+    document.getElementById("navbar").style.opacity = "1";
+    document.getElementById("navbar").style.boxShadow = "none";
+  }
+  else if(document.documentElement.scrollTop <= 40 && screen.width<=900) {
+    document.getElementById("logo").style.width = "25%";
+    document.getElementById("navbar").style.opacity = "1";
+    document.getElementById("navbar").style.boxShadow = "none";
+  }
+  else if(document.documentElement.scrollTop > 40 && screen.width<=900) {
+    document.getElementById("logo").style.width = "12%";
     document.getElementById("navbar").style.opacity = "1";
     document.getElementById("navbar").style.boxShadow = "none";
   } 
