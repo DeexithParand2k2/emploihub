@@ -11,39 +11,35 @@
         <script src="https://kit.fontawesome.com/4917270fc0.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="./styles/index.css">
     </head>
-    <body id="main_container" class="container-fluid p-0 m-0">
-        <header class="container-fluid p-1 position-sticky" style="top:0;" id="navbar">
-            <div id="navRow" class="row-fluid d-flex justify-content-around align-items-center">
-                <!--Navbar logo Space-->
-                <img class="p-3" id="logo" alt="emploihub logo..." src="http://www.emploihub.com/assets/EmpHub_logo.png">
-
-                <!--Navbar Buttons-->
-                <div class="d-inline-flex flex-row justify-content-center align-items-center" id="pages">
-                    <li><a class="" href="https://www.w3schools.com" target="_blank">JOBS</a></li>
-                    <li><a class="" href="https://www.w3schools.com" target="_blank">COMPANIES</a></li>
-                    <li><a class="" href="https://www.w3schools.com" target="_blank">SERVICES</a></li>
-                    <li><a class="" href="https://www.w3schools.com" target="_blank">RESOURCES</a></li>
-                </div>
-
-                <!--Navbar login Point-->
-                <div id="buttons" class="d-flex justify-content-around align-items-center">
-                    <div class="d-flex m-2 flex-column align-items-center">
-                        <a href="https://www.w3schools.com" target="_blank">
-                            <div id="candBtn" class="btn btn-static btn-secondary btn-sm">Candidate</div>
+    <body id="main_container">
+        <header class="p-1 position-sticky" style="top:0;" id="navbar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand m-2" href="#">
+                  <img class="p-3" id="logo" style="width: 100%;" alt="emploihub logo..." src="http://www.emploihub.com/assets/EmpHub_logo.png">
+                </a>
+                <button class="navbar-toggler m-3" data-toggle="collapse" data-target="#pages">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="pages">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a href="#" class="nav-link m-3">JOBS</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link m-3">COMPANIES</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link m-3">SERVICES</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link m-3">RESOURCES</a></li>                    
+                    </ul>
+                    <div class="nav-item" id="buttons">
+                        <a href="https://www.google.co.in/">
+                            <div id="candBtn" class="btn btn-static btn-secondary m-3">Candidate</div>
                         </a>
-                    </div>
-                    <div class="d-flex m-2 flex-column align-items-center">
-                        <a href="https://www.w3schools.com" target="_blank">
-                            <div id="empBtn" class="btn btn-static btn-secondary btn-sm">Employer</div>
+                        <a href="https://www.google.co.in/">    
+                            <div id="empBtn" class="btn btn-static btn-secondary m-3">Employer</div>
                         </a>
                     </div>
                 </div>
-
-            </div>
+            </nav>
         </header>
 
         <div class="container-fluid p-0 m-0 d-flex flex-column justify-content-between align-items-center" id="contentMain">
-            <!--Start-->
 
             <div class="container-fluid p-0 m-0 d-flex justify-content-center align-items-center" id="contentBox1">
                 <div class="row-fluid p-3 m-0">
@@ -98,4 +94,42 @@
 
         <script src="./script/index.js" type="text/javascript" rel="script"></script>
     </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </html>
+
+
+<!-- 
+    <header class="container-fluid p-1 position-sticky" style="top:0;" id="navbar">
+            <div id="navRow" class="row-fluid d-flex justify-content-around align-items-center">
+                
+                <img class="p-3" id="logo" alt="emploihub logo..." src="http://www.emploihub.com/assets/EmpHub_logo.png">
+
+                
+                <div class="d-inline-flex flex-row justify-content-center align-items-center" id="pages">
+                    <li><a class="" href="https://www.w3schools.com" target="_blank">JOBS</a></li>
+                    <li><a class="" href="https://www.w3schools.com" target="_blank">COMPANIES</a></li>
+                    <li><a class="" href="https://www.w3schools.com" target="_blank">SERVICES</a></li>
+                    <li><a class="" href="https://www.w3schools.com" target="_blank">RESOURCES</a></li>
+                </div>
+
+                <div id="buttons" class="d-flex justify-content-around align-items-center">
+                    <div class="d-flex m-2 flex-column align-items-center">
+                        <a href="https://www.w3schools.com" target="_blank">
+                            <div id="candBtn" class="btn btn-static btn-secondary btn-sm">Candidate</div>
+                        </a>
+                    </div>
+                    <div class="d-flex m-2 flex-column align-items-center">
+                        <a href="https://www.w3schools.com" target="_blank">
+                            <div id="empBtn" class="btn btn-static btn-secondary btn-sm">Employer</div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </header> 
+-->

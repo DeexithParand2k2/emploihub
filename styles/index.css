@@ -15,6 +15,7 @@
 }
 
 #main_container{  
+    min-height:100%;
     background-color: var(--custom-white-2);
 }
 
@@ -72,10 +73,6 @@ html, body {
         font-size:2em;
     }
 
-    #logo{
-        width: 25%;
-    }
-
     #footContent{
         display: flex;
         flex-direction: column;
@@ -102,10 +99,28 @@ html, body {
     #foot{
         height: 40em;
     }
+
+    #pages a{
+        padding: 48px;
+        font-size: 2em;
+    }
+
+    #buttons a{
+        font-size: 2em;
+    }
 }
 
 /*Small Screen*/
 @media screen and (max-width: 500px){
+    #pages a{
+        padding: 48px;
+        font-size: 2em;
+    }
+
+    #buttons a{
+        font-size: 2em;
+    }
+    
     #textBox1{
         white-space: normal;
     } 
@@ -148,10 +163,6 @@ html, body {
         height: calc(50px + 100px);
         width: calc(50px + 100px);
         font-size:2em;
-    }
-
-    #logo{
-        width: 25%;
     }
 
     #footContent{
@@ -207,33 +218,33 @@ html, body {
 }
 
 #pages{
+    text-decoration: none;
     list-style: none;
 }
 
-#pages li a{
-    text-decoration: none;
-
-    padding: 20px;
+#pages a{
     color: var(--custom-blue);
     transition: all 0.25s ease;
 }
 
-#pages li a:hover{
+#pages a:hover{
     color: var(--custom-orange);
 }
 
 #candBtn, #empBtn{
+    text-decoration: none;
     font-weight: bold;
-    transition: all 0.5s ease;
+}
+
+#buttons > a{
+    text-decoration: none;
 }
 
 #navbar{
     position: sticky;
     border-bottom: 2px dashed #2b2b29;
     background-color: var(--custom-white-2);
-    width: auto;
 }
-
 
 #circle1, #circle2, #circle3{
     background-color: var(--custom-blue-3);
