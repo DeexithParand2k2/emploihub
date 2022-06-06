@@ -3,14 +3,49 @@
     padding: 0px;
 }
 
+h1{
+    font-weight: bold;
+}
+
+#headText1,#searchBarText > span{
+    background: -webkit-linear-gradient(var(--custom-orange),rgb(75, 203, 58));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 :root{
     --custom-white-2 : #FFFFFF;
     --custom-blue : #212362;
     --custom-blue-2 : #F9FBFF;
     --custom-blue-2-0 : #ebf2ff;
     --custom-blue-3 : #5257A6;
-    --custom-blue-4 : #21236272;
+    --custom-blue-4 : #1e2058cc;
+    --custom-blue-4-dark : #393965;
     --custom-orange : #F2A33B;
+    --custom-orange-dull : #f7bb6c;
+    --custom-pink: #F2ECFD;
+}
+
+#mainHeader{
+    font-size: 4em; 
+}
+
+.btn-outline-primary{
+    background-color: var(--custom-blue-2-0) !important;
+    color: var(--custom-blue);
+    border: var(--custom-blue);
+}
+
+.btn-outline-primary:hover{
+    background-color: var(--custom-blue) !important;
+}
+
+#textBox1 > div > p{
+    color: var(--custom-blue-3);
+}
+
+#searchBar{
+    box-shadow:  5px 5px 10px 1px rgba(150, 150, 150, 0.2);
 }
 
 #mainBox1{
@@ -123,17 +158,14 @@ body, html{
     transform-origin: bottom left;
 }
 
-#textBox1 > div > p{
-    color: var(--custom-blue-3);
-}
-
 #circle1, #circle2, #circle3{
     background-color: var(--custom-blue-4);
     color:var(--custom-white-2); 
+    transition: all 0.5s ease;
 }
 
 #circle1:hover, #circle2:hover, #circle3:hover{
-    background-color: var(--custom-orange);
+    background-color: var(--custom-orange-dull);
     cursor: pointer; 
 }
 

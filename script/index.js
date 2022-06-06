@@ -16,17 +16,14 @@ function scrollFunction() {
 $("#circle1").click(function(){
   var x = $("#box1").offset();
   document.documentElement.scrollTop = x.top-140;
-  console.log(x.top);
 });
 
 $("#circle2").click(function(){
   var x = $("#box2").offset();
   document.documentElement.scrollTop = x.top-140;
-  console.log(x.top);
 });
 
 $("#circle3").click(function(){
   var x = $("#box3").offset();
   document.documentElement.scrollTop = x.top-140;
-  console.log(x.top);
 });

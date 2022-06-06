@@ -30,10 +30,10 @@
                     </ul>
                     <div class="nav-item" id="buttons">
                         <a href="#">
-                            <div id="candBtn" class="btn btn-outline-dark m-2">Candidate</div>
+                            <div id="candBtn" class="btn btn-outline-dark rounded-pill m-2">Candidate</div>
                         </a>
                         <a href="#">    
-                            <div id="empBtn" class="btn btn-outline-dark m-2">Employer</div>
+                            <div id="empBtn" class="btn btn-outline-dark rounded-pill m-2">Employer</div>
                         </a>
                     </div>
                 </div>
@@ -41,11 +41,29 @@
         </header>
 
         <div id="mainBox1" class="d-flex flex-wrap justify-content-around">
-            <div id="textBox1" class="d-flex flex-wrap flex-column justify-content-center align-items-center p-3">
-                <div><h1 class="text-center">We Can Make Your Future Better</h1></div>
-                <div><p class="text-center">Join Us And Create A Better Future For Yourself.</p></div>
+            <div id="textBox1" class="d-flex flex-wrap flex-column justify-content-center align-items-center p-5">
+                
+                <div>
+                    <h1 id="mainHeader" style="color: black;" class="text-center">
+                        We Can Make<br>Your Future <span id="headText1">Better</span>
+                    </h1>
+                </div>
+                
+                <div><small><p class="text-center p-2">Join Us And Create A Better Future For Yourself.</p></small></div>
+                
+                <div id="popularSearches" class="mt-0 m-5 p-5">
+                    <h5 class="text-center">Popular Searches</h5>
+                    <div class="d-flex flex-row flex-wrap" style="width: 100%;">
+                        <div class="btn btn-outline-primary rounded-pill m-2">Full-Stack</div>
+                        <div class="btn btn-outline-primary rounded-pill m-2">Work from home</div>
+                        <div class="btn btn-outline-primary rounded-pill m-2">Sales</div>
+                        <div class="btn btn-outline-primary rounded-pill m-2">Finance</div>
+                        <div class="btn btn-outline-primary rounded-pill m-2">Front-End</div>
+                    </div>
+                </div>
+            
             </div>
-            <div id="circlePlay" class="d-flex flex-column align-items-center">
+            <div id="circlePlay" class="d-flex flex-column align-items-center p-3">
                 <div class="d-flex flex-wrap flex-row justify-content-center align-items-center">
                     <div id="circle1" onclick="" class="rounded-circle d-flex justify-content-center align-items-center text-center p-5 m-4">WOMEN</div>
                     <div id="circle2" onclick="" class="rounded-circle d-flex justify-content-center align-items-center text-center p-5 m-4">PHYSICALLY<br>CHALLENGED</div>
@@ -54,20 +72,108 @@
             </div>
         </div>
 
+        <div class="search d-flex flex-column p-5 m-5">
+            <h1 id="searchBarText" class="text-center m-5 mt-0">Begin Your Journey<br><span>Here!</span></h1>
+            <div id="searchBar" class="input-group d-flex flex-row">
+                <input type="text" class="form-control" placeholder="Job Title, Keywords, or Company">
+                <input type="text" class="form-control" placeholder="Location">
+                <button class="btn btn-dark p-3">Search</button>
+            </div>
+        </div>
+
         <div id="mainBox2" class="d-flex flex-column">
-            <div id="box1" class="d-flex flex-row flex-wrap justify-content-around p-5">
+            <div id="box1" class="d-flex flex-row flex-wrap justify-content-center p-5">
                 <img id="circleImg" src="https://www.yourmembership.com/wp-content/uploads/2017/07/Blog071817-CareerCenterPartners-card-1-1080x675.png" class="rounded-circle d-flex justify-content-center align-items-center m-5"></img>
                 <div id="text1" class="text-left p-5 m-5">Women also should be given equal rights like men to really empower them. They should not be treated as weak gender of the society as they occupy almost half population of the country so they are half strength of the country. Women have more patience and effort; they can better develop their country.</div>
             </div>
-            <div id="box2" class="d-flex flex-row flex-wrap justify-content-around p-5">
+            <div id="box2" class="d-flex flex-row flex-wrap justify-content-center p-5">
                 <div id="text2" class="text-left p-5 m-5">In the case of employees with physical disabilities, the knowledge of results is a predictor of motivation when they had medium or high levels of self-efficacy. Additionally, in this group, responsibility for outcomes and meaningfulness of work had a direct effect on motivation, independently of their levels of self-efficacy.</div>
                 <img id="circleImg" src="https://res.cloudinary.com/people-matters/image/upload/q_auto,f_auto/v1559667392/1559667390.jpg" class="rounded-circle d-flex justify-content-center align-items-center m-5"></img>
             </div>
-            <div id="box3" class="d-flex flex-row flex-wrap justify-content-around p-5">
+            <div id="box3" class="d-flex flex-row flex-wrap justify-content-center p-5">
                 <img id="circleImg" src="https://dutchuncles.in/wp-content/uploads/2021/07/PeriFerry-Helping-the-Transgender-Community-Find-Employment.jpg" class="rounded-circle d-flex justify-content-center align-items-center m-5"></img>
                 <div id="text3" class="text-left p-5 m-5">In the case of employees with physical disabilities, the knowledge of results is a predictor of motivation when they had medium or high levels of self-efficacy. Additionally, in this group, responsibility for outcomes and meaningfulness of work had a direct effect on motivation, independently of their levels of self-efficacy. Employees with disabilities should be empowered to make choices and exercise control in their working lives. To do so, human resources managers should promote their wellbeing, taking into consideration the workforce diversity.</div>
             </div>
         </div>
+
+        <div class="d-flex flex-row flex-wrap justify-content-around align-items-center">
+            <div class="d-flex flex-column p-5 m-5">
+                <h1 class="text-center" style="font-size: 3em;">4M</h1>
+                <small class="text-center">4 million daily active users</small>
+            </div>
+            <div class="d-flex flex-column p-5 m-5">
+                <h1 class="text-center" style="font-size: 3em;">12k</h1>
+                <small class="text-center">Over 12k open job positions</small>
+            </div>
+            <div class="d-flex flex-column p-5 m-5">
+                <h1 class="text-center" style="font-size: 3em;">20M</h1>
+                <small class="text-center">Over 20 million stories shared</small>
+            </div>
+        </div>
+
+        <div id="carouselExampleControls" class="d-flex flex-row align-items-center justify-content-center carousel slide m-5" data-ride="carousel">
+            <h1 class="text-center p-5">Testimonials From Our Customers</h1>
+        
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card p-5 text-center" style="width: 25em;">
+                        <div class="d-flex flex-column">
+                            <div class="d-flex justify-content-center">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"class="rounded-circle shadow-1-strong" width="150" height="150" />
+                            </div>
+                            <h5 class="d-flex justify-content-center p-3 m-3">Maria Smantha</h5>
+                            <p class="d-flex justify-content-center text-wrap" style="width:100%;">
+                                <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
+                                tenetur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card p-5 text-center" style="width: 25em;">
+                        <div class="d-flex flex-column">
+                            <div class="d-flex justify-content-center">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                                class="rounded-circle shadow-1-strong" width="150" height="150" />
+                            </div>
+                            <h5 class="d-flex justify-content-center p-3 m-3">Lisa Cudrow</h5>
+                            <p class="d-flex justify-content-center">
+                            <i class="fas fa-quote-left pe-2"></i>Ut enim ad minima veniam, quis nostrum
+                            exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card p-5 text-center" style="width: 25em;">
+                        <div class="d-flex flex-column">
+                            <div class="d-flex justify-content-center">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                                class="rounded-circle shadow-1-strong" width="150" height="150" />
+                            </div>
+                            <h5 class="d-flex justify-content-center p-3 m-3">John Smith</h5>
+                            <p class="d-flex justify-content-center">
+                                <i class="fas fa-quote-left pe-2"></i>At vero eos et accusamus et iusto odio
+                                dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+
 
         <footer id="foot" class="p-0 m-0 d-flex flex-column justify-content-center">
             <div id="footContent" class="p-0 m-0 d-flex flex-wrap justify-content-around align-items-center">
