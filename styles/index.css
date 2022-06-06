@@ -34,7 +34,7 @@
 }
 
 #text1,#text2,#text3{
-    width: 40%;
+    width: 50%;
 }
 
 body, html{
@@ -152,6 +152,11 @@ body, html{
     width: 150px;
 }
 
+@media(max-width: 1060px){
+    #text1,#text2,#text3{
+        width: 100%;
+    }
+}
 
 @media (max-width: 750px) {  
     #circle1{
