@@ -19,6 +19,7 @@ h1{
     --custom-blue-2 : #F9FBFF;
     --custom-blue-2-0 : #ebf2ff;
     --custom-blue-3 : #5257A6;
+    --custom-blue-3-1 : #414699;
     --custom-blue-4 : #1e2058cc;
     --custom-blue-4-dark : #393965;
     --custom-orange : #F2A33B;
@@ -159,7 +160,7 @@ body, html{
 }
 
 #circle1, #circle2, #circle3{
-    background-color: var(--custom-blue-4);
+    background-color: var(--custom-blue-4-dark);
     color:var(--custom-white-2); 
     transition: all 0.5s ease;
 }
